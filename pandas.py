@@ -34,6 +34,10 @@ df.loc[df['Name'] == 'Emma', 'Salary'] = 65000
 print("\nDataFrame after updating Emma's Salary:")
 print(df)
 
+df = df.drop('Experience', axis=1)
+print("\nDataFrame after deleting Experience column:")
+print(df)
+
 
 #output:
 Original DataFrame:
@@ -91,6 +95,3 @@ DataFrame after deleting Experience column:
 4   Tom   27    Germany   52000
 #
 
-df = df.drop('Experience', axis=1)
-print("\nDataFrame after deleting Experience column:")
-print(df)
